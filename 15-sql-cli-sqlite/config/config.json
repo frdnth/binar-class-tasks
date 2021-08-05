@@ -1,0 +1,21 @@
+{
+  "development": {
+
+    "dialect": "sqlite",
+    "storage": "./sqlite-dev.db"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "dblocal321",
+    "database": "harvest_moon",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "dblocal321",
+    "database": "harvest_moon",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

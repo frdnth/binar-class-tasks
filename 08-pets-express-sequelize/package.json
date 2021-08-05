@@ -1,0 +1,45 @@
+{
+  "name": "08-pets-express-sequelize",
+  "version": "1.0.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+=======
+=======
+>>>>>>> b891ae9767ff1579f8ea2c1d453e8e2d38440045
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+<<<<<<< HEAD
+>>>>>>> 64de1189bc008188ebccb89c45bdcd613b196006
+=======
+>>>>>>> b891ae9767ff1579f8ea2c1d453e8e2d38440045
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+<<<<<<< HEAD
+<<<<<<< HEAD
+  }
+=======
+  },
+  "description": ""
+>>>>>>> 64de1189bc008188ebccb89c45bdcd613b196006
+=======
+  },
+  "description": ""
+>>>>>>> b891ae9767ff1579f8ea2c1d453e8e2d38440045
+}

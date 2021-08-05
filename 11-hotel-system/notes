@@ -1,0 +1,53 @@
+4 table
+- person
+  - id
+  - name
+  - age
+  - phone
+- room
+  - id
+  - person_id
+  - floor
+  - type: ['deluxe, platinum', 'economic']
+- order
+  - id
+  - person_id
+  - room_id
+  - total_price
+  - discount
+  - duration -> lama nginap
+  - created_at -> tanggal join
+  - updated_at => tanggal checkout
+- price
+  - id
+  - type: ['deluxe, platinum', 'economic']
+  - price: ['750000, 500000', '300000']
+
+ketentuan discount:
+  - kalau durasi menginap lebih dari 2 hari, dapat discount 10%
+
+rumus total_price => duration * harga_kamar - discount
+
+relation:
+person 1:M room
+room 1:1 order
+room: 1:1 price
+
+
+/person
+  GET all
+  POST
+
+/room
+  GET all
+  POST
+  PUT
+
+/order
+  GET all
+  POST
+  PUT
+
+/price
+  GET
+  POST

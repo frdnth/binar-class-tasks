@@ -1,0 +1,18 @@
+version: "3.8"
+
+# define image in services
+services:
+    postgresService:
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_USER: root
+            POSTGRES_PASSWORD: dbcontainer
+        ports:
+            - 5444:5432 #port_local:port_docker
+
+    adminerService:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080

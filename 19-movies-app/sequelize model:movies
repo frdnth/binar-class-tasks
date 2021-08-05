@@ -1,0 +1,17 @@
+sequelize model:create --name movies --attributes title:string,overview:string,popularity:string,rating:string,release_date:date,thumbnails:string,tagline:string,vote_count:string,company_name:string
+
+sequelize model:create --name movie_casts --attributes movie_id:integer,actors_id:integer,character_name:string
+
+sequelize model:create --name actors --attributes person_name:string,gender:string
+
+sequelize model:create --name movie_categories --attributes movie_id:integer,category_id:integer
+
+sequelize model:create --name categories --attributes category_name:string
+
+sequelize model:create --name movie_genres --attributes movie_id:integer,genre_id:integer
+
+sequelize model:create --name genres --attributes genre_name:string
+
+sequelize model:create --name watchlists --attributes user_id:integer,movie_id:integer
+
+sequelize model:create --name users --attributes name:string,username:string,password:string,email:string,phone:string,profile_pic:string
